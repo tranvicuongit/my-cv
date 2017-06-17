@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var listOfThemes = [];
 
-	$.getJSON( "/Content/json/themes.json", function(data) {
+	$.getJSON( "https://tranvicuongit.github.io/my-cv/Content/json/themes.json", function(data) {
 		listOfThemes = data;
 		$.each(listOfThemes, function(index, ele){
 			var li = "<li><a data-id='" + ele.id + "'>" + ele.title + "</a><span>"+ ele.shortdesc +"</span></li>";
