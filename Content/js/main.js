@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var listOfThemes = [];
+	var masterLink = "https://tranvicuongit.github.io/my-cv";
 
 	$.getJSON( "https://tranvicuongit.github.io/my-cv/Content/json/themes.json", function(data) {
 		listOfThemes = data;
@@ -11,10 +12,10 @@ $(document).ready(function(){
 		if(listOfThemes.length > 0){
 			// Active first theme
 			var first = listOfThemes[0];
-			$("#contain-theme").find("img").attr("src", "/Page/" + first.folder + "/background.png");
+			$("#contain-theme").find("img").attr("src", masterLink + "/Page/" + first.folder + "/background.png");
 			$("#contain-theme").find(".title").text(first.title);
 			$("#contain-theme").find(".description").text(first.descrition);
-			$("#contain-theme").find("a").attr("href", "/Page/" + first.folder);
+			$("#contain-theme").find("a").attr("href", masterLink + "/Page/" + first.folder);
 		}
 	});
 });
