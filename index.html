@@ -1,27 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My CV</title>
-	<base href="/">
+	<title>My CV || Vi Cuong Tran </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Vi Cuong's CV">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="John Doe">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/Content/css/main.css">
+	<link rel="icon" href="/Content/images/favicon.png">
 </head>
-<body ng-app="MyCV">
+<body ng-app="MyCV" class="wrapper">
 	<header>
 		<ul>
 			<li>
-				<a ng-href="/home">Home page</a>
+				<a href="#home">Home</a>
 			</li>
 			<li>
-				<a ng-href="/about">About us</a>
+				<a href="#my-themes">My themes</a>
+			</li>
+			<li>
+				<a href="#my-short-info">My short info</a>
+			</li>
+			<li>
+				<a href="/index.html">Tiếng Việt</a>
 			</li>
 		</ul>
 	</header>
-	<div data-ng-view>
-		Waiting....
+	<div id="content">
+		<div id="home">
+			<div id="banner">
+				<div class="inner-banner">
+					<div class="title">
+						welcome to <br/> my curriculum vitae
+					</div>
+					<div class="description">
+						“I am a developer from Vietnam.<br/>
+						Please choose a themes to view full curriculum vitae”.
+					</div>
+				</div>
+				<div class="scroll-down">
+					Please choose a themes 
+					<span>></span>
+				</div>
+			</div>
+		</div>
+		<div id="my-themes">
+			<div class="container">
+				<h2>
+					MY THEMES
+				</h2>
+				<div class="choose-themes">
+					<div class="contain-themes col col-md-8 col-lg-8 col-sm-12" id="contain-theme">
+						<img class="img">
+						<div class="inner">
+							<div class="title">
+							</div>
+							<div class="description">
+							</div>
+							<div class="button">
+								<a href="" class="btn btn-viewdetail" target="_parent">Click to view full</a>
+							</div>
+						</div>
+					</div>
+					<div class="list-themes col col-md-4 col-lg-4 col-sm-12">
+						<ul id="ul-list-themes" class="row">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="my-short-info">
+			<h2>MY SHORT INFO
+			</h2>
+			<div class="container">
+				<div class="img">
+					<p></p>
+				</div>
+				<div class="info">
+					<p>Fullname: <b class="name">TRAN VI CUONG</b></p>
+					<p>Birthday: <b>10/ 02/1994</b></p>
+					<p>Sex: <b>Man</b></p>
+					<p>Country: <b>Vietnam</b></p>
+					<p>Phone: <b>+84 1222 148 184</b></p>
+					<p>Email: <b>tranvicuongit@gmail.com</b></p>
+				</div>
+			</div>
+		</div>
 	</div>
+	<footer>
+		<div class="quote-message">
+			<div class="container">
+				<p>
+					“If you want to go fast, go alone. If you want to go far, go together.”
+				</p>
+				<span>- African Proverb -</span>
+			</div>
+		</div>
+		<div class="copyright">
+			© Vi Cuong - My CV on Github
+		</div>
+	</footer>
 	<!--JS-->
 	<script type="text/javascript" src="https://tranvicuongit.github.io/my-cv/Content/js/jquery.min.js"></script>
-	<script src="https://tranvicuongit.github.io/my-cv/Content/lib/angularjs/angular.min.js"></script>
-	<script src="https://tranvicuongit.github.io/my-cv/Content/lib/angularjs/angular-route.min.js"></script>
-	<script src="https://tranvicuongit.github.io/my-cv/App/app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/Content/js/main.js"></script>
 </body>
 </html>
