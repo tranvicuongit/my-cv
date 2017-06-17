@@ -1,5 +1,5 @@
 # MY CURRICULUM VITAE PROJECT
-The project only for my curriculum vitae, use Angular JS 1.x to write framework. HTHML5 & CSS3 with SCSS to display template.
+The project only for my curriculum vitae. HTHML5 & CSS3 with SCSS to display template.
 (Vietnamese below)
 
 # MY CONTACT
@@ -17,7 +17,7 @@ The project only for my curriculum vitae, use Angular JS 1.x to write framework.
 
 # TIẾNG VIỆT
 ## DỰ ÁN: CV CỦA TÔI
-Đây là dự án dành cho CV của tôi, được dùng framework AngularJS 1.x và HTML5 + CSS3 với sự giúp đỡ từ SCSS để hiển thị.
+Đây là dự án dành cho CV của tôi, dùng HTML5 + CSS3 với sự giúp đỡ từ SCSS để hiển thị.
 
 ## THÔNG TIN LIÊN HỆ
 * Quốc gia: Sài Gòn, Việt Nam
