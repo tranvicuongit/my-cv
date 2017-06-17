@@ -31,7 +31,7 @@ window.onload = function () {
 		console.log("%c\nWARNING" +
 			"%c\nThis is a feature of the browser provide to the developer only.\n" +
 			"Copy and paste may be harm your computer.\nThanks!" +
-			"\n\n%cEP Pressed Juice",
+			"\n\n%cVi Cuong",
 			"color:#c8102e; background-color:white;font-weight:bold; font-size: 30pt;",
 			"color:#c8102e; background-color:white;font-weight:500; font-size: 11pt;",
 			"color:#000; background-color:white; font-size: 10pt; font-weight: bold;");
