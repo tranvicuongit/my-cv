@@ -11,36 +11,18 @@
 
 	<!-- 1. Add latest jQuery and fancyBox files -->
 
-	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://tranvicuongit.github.io/my-cv/Content/js/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
 	<link rel="icon" href="https://tranvicuongit.github.io/my-cv/Content/images/favicon.png">
 </head>
 <body ng-app="MyCV" class="wrapper">
-	<h3>Image gallery</h3>
-
-	<p>
-		Galleries are created by adding the same <code>data-fancybox</code> attribute value.
+	<h3>CV Image gallery</h3>
+	<p id="listOfImages" style="height: 800px;overflow-y: auto;">
 	</p>
 
-	<p id="listOfImages">
-
-		<a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images">
-			<img src="https://c1.staticflickr.com/9/8148/29324593462_f890687b7a_m.jpg" />
-		</a>
-
-		<a href="https://c2.staticflickr.com/6/5499/30972532232_051e1dc57e_h.jpg" data-fancybox="images">
-			<img src="https://c2.staticflickr.com/6/5499/30972532232_e9a298a0c5_m.jpg" />
-		</a>
-
-		<a href="https://c1.staticflickr.com/9/8021/29345513551_0c565462d8_k.jpg" data-fancybox="images">
-			<img src="https://c1.staticflickr.com/9/8021/29345513551_16024a89e3_m.jpg" />
-		</a>
-
-	</p>
-
-	<script type="text/JavaScript">
+	<script type="text/javascript">
 		$(document).on("ready", function(){
 			var str = "";
 			for(var i = 2; i <= 76; i++){
