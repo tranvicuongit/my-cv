@@ -7,8 +7,8 @@
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 	<meta name="author" content="John Doe">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	
+
+
 	<!-- 1. Add latest jQuery and fancyBox files -->
 
 	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -24,8 +24,8 @@
 		Galleries are created by adding the same <code>data-fancybox</code> attribute value.
 	</p>
 
-	<p>
-		
+	<p id="listOfImages">
+
 		<a href="https://c1.staticflickr.com/9/8148/29324593462_abebaddc38_k.jpg" data-fancybox="images">
 			<img src="https://c1.staticflickr.com/9/8148/29324593462_f890687b7a_m.jpg" />
 		</a>
@@ -37,7 +37,22 @@
 		<a href="https://c1.staticflickr.com/9/8021/29345513551_0c565462d8_k.jpg" data-fancybox="images">
 			<img src="https://c1.staticflickr.com/9/8021/29345513551_16024a89e3_m.jpg" />
 		</a>
-		
+
 	</p>
+
+	<script type="text/JavaScript">
+		$(document).on("ready", function(){
+			var str = "";
+			for(var i = 2; i <= 76; i++){
+				str += '<a href="https://tranvicuongit.github.io/my-cv/Page/cvreference/cv (' + i +').jpg" data-fancybox="images"><img src="https://tranvicuongit.github.io/my-cv/Page/cvreference/cv (' + i +').jpg" /></a>';				
+			}
+			for(var i = 1; i <= 12; i++){
+				str += '<a href="https://tranvicuongit.github.io/my-cv/Page/cvreference/cv (' + i +').png" data-fancybox="images"><img src="https://tranvicuongit.github.io/my-cv/Page/cvreference/cv (' + i +').png" /></a>';				
+			}
+			$("#listOfImages").html(str);
+
+			$("[data-fancybox]").fancybox({});
+		});
+	</script>
 </body>
 </html>
